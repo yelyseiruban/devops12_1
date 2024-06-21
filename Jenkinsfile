@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Configure') {
             steps {
-                sh 'sudo apt install python3'
+                sh 'pip install python==3.9.7'
             }
         }
         stage('Test') {
